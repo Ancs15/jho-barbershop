@@ -1,0 +1,9 @@
+vendor/
+.env
+.env.backup
+node_modules/
+*.log
+desktop.ini
+/backup/
+/DB/
+*.sql

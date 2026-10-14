@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use App\Models\Produto;
+use App\Models\Categoria;
+use Illuminate\Http\Request;
+
+class ProdutoController extends Controller
+{
+    // Listar todos os produtos cadastrados
+   public function index()
+    {
+        $listaProduto = Produto::with('categoria')
+            ->orderByDesc('id_produto', 'desc')
+            ->paginate(6);
+
+        return view('admin.produto.index', compact('listaProduto'));
+    }
+
+}

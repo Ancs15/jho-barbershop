@@ -1,0 +1,129 @@
+/* FONTES GOOGLE */
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/*VARIAVÉIS JHO */
+:root {
+
+    /* Cores */
+    --cor-primaria-1: #000000;
+    --cor-primaria-2: #fca311;
+    --cor-secundaria-1: #8b5e3a;
+    --cor-secundaria-2: #562f00;
+    --cor-terciaria: #e5e5e5;
+    --cor-caixas: #494949;
+
+
+    --cor-texto: #000000;
+    --cor-titulo: #14213d;
+    --cor-subtitulo: #000000;
+
+    /* Fontes */
+
+    --fonte-titulo: "Bebas Neue";
+    --fonte-texto: "Inknut Antiqua";
+}
+
+
+h1{
+    font-family: var(--fonte-titulo) !important;
+    font-weight: 400;
+    color: var(--cor-titulo);
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    color: var(--cor-titulo);
+    font-weight: bold;
+}
+
+h3 {
+    font-family: var(--fonte-texto);
+    color: var(--cor-secundaria-1);
+    font-size: 20px;
+}
+
+p {
+    font-family: var(--fonte-texto);
+    color: var(--cor-primaria-2);
+    font-size: 15px;
+}
+
+a{
+    font-family: var(--fonte-texto) !important; 
+    color: var(--cor-secundaria-2);
+}
+
+.app-main{
+    background-color: var(--cor-terciaria);
+}
+
+.sidebar-menu .nav-header{
+    font-family: var(--fonte-texto);
+}
+
+
+.app-sidebar{
+    background:#0b0b0b !important;
+
+}
+.sidebar-brand{
+    height: 100px;
+}
+
+.sidebar-brand .brand-link .brand-image {
+  width: 150px;
+  max-height: none;
+}
+
+.sidebar-overlay{
+    background-color: var(--cor-terciaria);
+}
+
+
+
+
+/* cor das caixas */
+.text-bg-primary {
+  background-color: var(--cor-caixas) !important;
+
+  }
+
+.text-bg-success {
+
+  background-color: var(--cor-primaria-2) !important;
+}
+
+.text-bg-warning{
+    background-color: var(--cor-caixas) !important;
+}
+
+.text-bg-danger{
+    background-color: var( --cor-caixas) !important;
+}
+
+/* fim cor das caixas */
+
+/* cor icons card */
+.small-box .small-box-icon {
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.50);
+} 
+
+/* cor footer */
+.app-footer{
+    
+    font-family: var(--fonte-texto);
+    color: var(--cor-primaria-2);
+}
+
+.float-end d-none d-sm-inline{
+    color: var(--cor-primaria-2);
+}
+
+
+

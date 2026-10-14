@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use App\Models\Categoria;
+use App\Models\Produto;
+
+class CategoriaController extends Controller
+{
+    // Listar todos as categorias cadastradas
+    public function index()
+    {
+        $listaCategoria = Categoria::orderByDesc('id_categoria', 'desc')
+        ->paginate(6);
+
+        return view('admin.categoria.index', compact('listaCategoria'));
+        
+    }
+}
