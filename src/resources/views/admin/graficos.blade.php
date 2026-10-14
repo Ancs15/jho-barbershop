@@ -3,7 +3,7 @@
   <div class="col-lg-4">
     <div class="card card-grafico mb-4">
       <div class="card-header">
-        <h3 class="card-title">Produtos ativos por categoria</h3>
+        <h3 class="card-title">Produtos Ativos</h3>
       </div>
       <div class="card-body">
         <div id="grafico-categorias" role="img" aria-label="Quantidade de produtos ativos em cada categoria"></div>

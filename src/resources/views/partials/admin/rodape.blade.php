@@ -4,7 +4,9 @@
         <!--end::To the end-->
         <!--begin::Copyright-->
         <strong>
-          Criado e desenvolvido por TECH TRIO STUDIO - ©2026
+          Propriedade de JHO'S BARBERSHOP 
+          <i class="bi bi-scissors"></i> 
+          | Criado e desenvolvido por Tech Trio Studio - ©2026
           
         </strong>
         

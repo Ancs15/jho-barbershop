@@ -73,55 +73,6 @@
 
             <!--end::Messages Dropdown Menu-->
 
-            <!--begin::Notifications Dropdown Menu-->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                data-bs-toggle="dropdown"
-                href="#"
-                aria-label="Notificações: {{ $qtdeNotificacoes }} pendentes"
-              >
-                <i class="bi bi-bell-fill"></i>
-                @if ($qtdeNotificacoes > 0)
-                  <span class="navbar-badge badge text-bg-warning">{{ $qtdeNotificacoes }}</span>
-                @endif
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-                      <span class="dropdown-item dropdown-header">
-                  {{ $qtdeNotificacoes > 0 ? $qtdeNotificacoes . ' pendências' : 'Nada pendente por aqui' }}
-                </span>
-                @foreach ($notificacoes as $notificacao)
-                  <div class="dropdown-divider"></div>
-                  <a href="{{ $notificacao['link'] }}" class="dropdown-item">
-                    <i class="bi {{ $notificacao['icone'] }} me-2"></i> {{ $notificacao['texto'] }}
-                    @if ($notificacao['quando'])
-                      <span class="float-end text-secondary fs-7">
-                        {{ \Illuminate\Support\Carbon::parse($notificacao['quando'])->locale('pt_BR')->diffForHumans() }}
-                      </span>
-                    @endif
-                  </a>
-                @endforeach
-
-                <div class="dropdown-divider"></div>
-                <a href="{{ route('dashboard') }}" class="dropdown-item dropdown-footer">Ir para o dashboard</a>
-              </div>
-            </li>
-            <!--end::Notifications Dropdown Menu-->
-
-            <!--begin::Fullscreen Toggle-->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-lte-toggle="fullscreen"
-                aria-label="Tela cheia"
-              >
-                <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
-                <i data-lte-icon="minimize" class="bi bi-fullscreen-exit d-none"></i>
-              </a>
-            </li>
-            <!--end::Fullscreen Toggle-->
-
             <!--begin::Color Mode Toggle (o AdminLTE salva a escolha no navegador)-->
             <li class="nav-item dropdown">
               <a
