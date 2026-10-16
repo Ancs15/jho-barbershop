@@ -1,5 +1,4 @@
 <footer class="app-footer">
-        <!-- tesoura entre duas linhas -->
         <div class="footer-line">
           <hr>
           <i class="bi bi-scissors"></i>
