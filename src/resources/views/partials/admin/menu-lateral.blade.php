@@ -29,7 +29,7 @@
             >
               <li class="nav-item menu-open">
                 <a href="/dashboard" class="nav-link active">
-                  <i class="nav-icon bi bi-speedometer"></i>
+                  <i class="bi bi-houses-fill"></i>
                   <p>
                     Dashboard
                   </p>
@@ -42,14 +42,14 @@
               
               <li class="nav-item">
                 <a href="{{ route('admin.produto.index') }}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-box2-fill"></i>
                   <p>Produtos</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="{{ route('admin.categoria.index') }}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-tags-fill"></i>
                   <p>Categorias</p>
                 </a>
               </li>
@@ -59,14 +59,14 @@
 
               <li class="nav-item">
                 <a href="{{route('admin.cliente.index')}}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-person-fill"></i>
                   <p>Clientes</p>
                 </a>
               </li>
 
               <li class="nav-item">
                   <a href="{{ route('admin.usuario.index') }}" class="nav-link">
-                    <i class="nav-icon bi bi-circle-fill"></i>
+                    <i class="bi bi-person-fill"></i>
                     <p class="text">Usuários</p>
                   </a>
                 </li>
@@ -75,27 +75,27 @@
               <li class="nav-header">SITE</li>
               <li class="nav-item">
                 <a href="{{ route('admin.banner.index') }}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-card-image"></i>
                   <p>Banners</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="{{route('admin.galeria.index')}}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-camera-fill"></i>
                   <p>Galeria</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="{{route('admin.depoimento.index')}}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-chat-dots-fill"></i>
                   <p>Depoimentos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('admin.mensagem.index')}}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-envelope-fill"></i>
                   <p>Mensagens</p>
                 </a>
               </li>
@@ -103,20 +103,28 @@
 
                <li class="nav-item">
                 <a href="{{route('admin.servicos.index')}}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
+                  <i class="bi bi-gear-fill"></i>
                   <p>Serviços</p>
                 </a>
               </li>
 
                 <li class="nav-item">
                 <a href="{{route('admin.categoria_servicos.index')}}" class="nav-link">
-                  <i class="nav-icon bi bi-circle-fill"></i>
-                  <p>Categorias Serviços</p>
+                  <i class="bi bi-list-nested"></i>
+                  <p>Tipos de serviços</p>
                 </a>
               </li>
 
             </ul>
+
+            <div class="footer-line">
+              <hr>
+              <i class="bi bi-scissors"></i>
+              <hr>
+            </div>
+          </div>
             <!--end::Sidebar Menu-->
+          
 
        
       </aside>

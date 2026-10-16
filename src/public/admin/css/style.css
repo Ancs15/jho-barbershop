@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
+
 /*VARIAVÉIS JHO */
 :root {
 
@@ -13,8 +14,8 @@
     --cor-primaria-2: #D99A16;
     --cor-secundaria-1: #8b5e3a;
     --cor-secundaria-2: #562f00;
-    --cor-terciaria: #f0e5c3;
-    --cor-caixas: #f6f1e5;
+    --cor-terciaria: #f5efdd;
+    --cor-caixas: #faf7ef;
 
     /* antiga cor caixas: #494949 */
     /* antiga cor terciaria #e5e5e5 */
@@ -31,9 +32,15 @@
 
 
 h1{
+    width: fit-content;
     font-family: var(--fonte-titulo) !important;
     font-weight: 400;
     color: var(--cor-titulo);
+    border-bottom: 3px solid var(--cor-primaria-2);
+}
+
+.fs-3 {
+    font-size: 2.5rem !important;
 }
 
 h2 {
@@ -62,6 +69,7 @@ a{
 }
 
 .margin-bottom-50 {
+    margin-top: 20px !important;
     margin-bottom: 50px;
 }
 
@@ -81,21 +89,49 @@ a{
 }
 
 .app-main{
-    background-color: var(--cor-terciaria);
+    /* background-color: var(--cor-terciaria); */
+    background: linear-gradient(158deg,rgb(236, 233, 215) 0%, rgb(243, 242, 237) 100%);
 }
 
 .sidebar-menu .nav-header{
     font-family: var(--fonte-texto);
-    color:#615435;
+    color:#b4a990;
 }
 
+.sidebar-menu .nav-item .nav-link,
+.sidebar-menu .nav-item .nav-link p {
+    font-family: var(--fonte-texto) !important;
+    color: #d6b361 !important;
+}
+
+.sidebar-menu .nav-item .nav-link.active {
+    background-color: rgba(217, 155, 22, 0.4) !important;
+    border-left: 3px solid var(--cor-primaria-2) !important;
+    border-right: 3px solid var(--cor-primaria-2) !important;
+    color: var(--cor-caixas) !important;
+}
+
+.sidebar-menu .nav-item .nav-link:hover {
+    background-color: rgba(217, 155, 22, 0.2);
+    color: var(--cor-caixas) !important; 
+}
+
+.sidebar-menu .nav-item .nav-link.active p {
+    color: var(--cor-caixas) !important;
+}
+
+.sidebar-menu .nav-item .nav-link:hover p {
+    color: var(--cor-caixas) !important;
+}
 
 .app-sidebar{
-    background:#0b0b0b !important;
-
+    background: #332106;
+    background: linear-gradient(180deg,rgba(51, 33, 6, 1) 0%, rgba(46, 30, 6, 1) 40%, rgba(87, 61, 13, 1) 100%);
+    border-left: 3px solid var(--cor-primaria-2);
 }
 .sidebar-brand{
     height: 100px;
+    border-bottom: none;
 }
 
 .sidebar-brand .brand-link .brand-image {
@@ -106,9 +142,6 @@ a{
 .sidebar-overlay{
     background-color: var(--cor-terciaria);
 }
-
-
-
 
 /* cor das caixas */
 .text-bg-primary {
@@ -168,6 +201,7 @@ a{
     background-color: #f5f4f0 !important;
     font-size: 13px;
     padding: 0 1rem 1rem 1rem;
+    border-top: none;
 }
 
 .float-end d-none d-sm-inline{
@@ -193,6 +227,11 @@ a{
 .footer-line i {
     font-size: 20px;
     color: var(--cor-primaria-2);
+}
+
+/* tesoura do menu lateral */
+.sidebar-wrapper .footer-line {
+    margin-top: 70%;
 }
 
 /* Cards de resumo do dashboard */
