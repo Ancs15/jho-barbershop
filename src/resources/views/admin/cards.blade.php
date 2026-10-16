@@ -33,7 +33,7 @@
 </svg>
       <div class="dashboard-stat-number">{{ $qtdeServicos }}</div>
       <div class="dashboard-stat-label">Serviços</div>
-      <a href="#" class="dashboard-stat-link">Mais informações <i class="bi bi-arrow-right-circle"></i></a>
+      <a href="{{ route('admin.servicos.index')}}" class="dashboard-stat-link">Mais informações <i class="bi bi-arrow-right-circle"></i></a>
     </div>
   </div>
   <!--end::Col-->  
@@ -45,7 +45,7 @@
 </svg>
       <div class="dashboard-stat-number">{{ $qtdeProdutos }}</div>
       <div class="dashboard-stat-label">Produtos</div>
-      <a href="#" class="dashboard-stat-link">Mais informações <i class="bi bi-arrow-right-circle"></i></a>
+      <a href="{{ route('admin.produto.index')}}" class="dashboard-stat-link">Mais informações <i class="bi bi-arrow-right-circle"></i></a>
     </div>
   </div>
   <!--end::Col-->

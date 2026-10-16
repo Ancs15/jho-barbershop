@@ -13,8 +13,8 @@
     --cor-primaria-2: #D99A16;
     --cor-secundaria-1: #8b5e3a;
     --cor-secundaria-2: #562f00;
-    --cor-terciaria: #f1ecdc;
-    --cor-caixas: #fffaef;
+    --cor-terciaria: #f0e5c3;
+    --cor-caixas: #f6f1e5;
 
     /* antiga cor caixas: #494949 */
     /* antiga cor terciaria #e5e5e5 */
@@ -86,6 +86,7 @@ a{
 
 .sidebar-menu .nav-header{
     font-family: var(--fonte-texto);
+    color:#615435;
 }
 
 
@@ -166,9 +167,31 @@ a{
     color: var(--cor-primaria-2);
     background-color: #f5f4f0 !important;
     font-size: 13px;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .float-end d-none d-sm-inline{
+    color: var(--cor-primaria-2);
+}
+
+/* linha e tesoura rodapé */
+.footer-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-line hr {
+    flex: 1;
+    border: none;
+    border-top: 3px solid var(--cor-primaria-2);
+    
+}
+
+.footer-line i {
+    font-size: 20px;
     color: var(--cor-primaria-2);
 }
 
@@ -223,6 +246,13 @@ a{
 
 .dashboard-stat-link:hover {
     text-decoration: underline;
+}
+
+/* grafico do dashboard */
+
+.card-grafico .card-title {
+    border-bottom: 3px solid var(--cor-primaria-2);
+    padding-bottom: 5px;
 }
 
 @media (max-width: 575.98px) {
