@@ -13137,7 +13137,7 @@ textarea.form-control-lg {
 }
 .sidebar-wrapper .sidebar-menu > .nav-item > .nav-link:hover, .sidebar-wrapper .sidebar-menu > .nav-item > .nav-link:focus {
   color: var(--lte-sidebar-hover-color);
-  background-color: var(--lte-sidebar-hover-bg);
+  /* background-color: var(--lte-sidebar-hover-bg); */
 }
 .sidebar-wrapper .sidebar-menu > .nav-item > .nav-link.active {
   color: var(--lte-sidebar-menu-active-color);

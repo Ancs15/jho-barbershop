@@ -1,6 +1,8 @@
 <div class="row">
   {{-- Produtos por categoria --}}
   <div class="col-lg-4">
+     <!-- link pra página de produto  -->
+    <a href="{{ route('admin.produto.index') }}">
     <div class="card card-grafico mb-4">
       <div class="card-header">
         <h3 class="card-title">Produtos Ativos</h3>
@@ -9,6 +11,7 @@
         <div id="grafico-categorias" role="img" aria-label="Quantidade de produtos ativos em cada categoria"></div>
       </div>
     </div>
+    </a>
   </div>
 
 </div>
