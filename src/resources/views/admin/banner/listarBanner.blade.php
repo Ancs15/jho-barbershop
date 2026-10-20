@@ -78,7 +78,7 @@
                                         <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
                                             data-bs-target="#modal-add-banner">
                                             <i class="bi bi-person-plus-fill me-1" aria-hidden="true"> </i>
-                                            Novo banner
+                                            <span>Novo banner</span>
                                         </button>
                                     </form>
                                 </div>

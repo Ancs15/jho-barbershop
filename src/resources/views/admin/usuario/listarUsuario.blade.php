@@ -53,7 +53,7 @@
                           </select>
                           <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-add-user">
                             <i class="bi bi-person-plus-fill me-1" aria-hidden="true"> </i>
-                            Novo Usuário
+                            <span>Novo usuário</span>
                           </button>
                         </div>
                       </div>
