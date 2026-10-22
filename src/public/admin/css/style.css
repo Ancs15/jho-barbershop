@@ -4,6 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+    font-family: 'Euphorigenic';
+    src: url(../../jho_barber/fonts/Euphorigenic.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 /*VARIAVÉIS JHO */
@@ -28,12 +35,13 @@
 
     --fonte-titulo: "Bebas Neue";
     --fonte-texto: "Inknut Antiqua";
+    --fonte-alternativa: "Euphorigenic";
 }
 
 
 h1{
     width: fit-content;
-    font-family: var(--fonte-titulo) !important;
+    font-family: var(--fonte-alternativa) !important;
     font-weight: 400;
     color: var(--cor-titulo);
     border-bottom: 3px solid var(--cor-primaria-2);
@@ -152,9 +160,9 @@ a{
 
 .sidebar-menu .nav-item .nav-link,
 .sidebar-menu .nav-item .nav-link p {
-    font-family: var(--fonte-titulo) !important;
+    font-family: var(--fonte-alternativa) !important;
     color: #d6b361 !important;
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
 }
 
 .sidebar-menu .nav-item .nav-link.active {
@@ -338,6 +346,11 @@ a{
     color: var(--cor-primaria-2);
 }
 
+.dashboard-stat-number,
+.dashboard-stat-label {
+    font-family: var(--fonte-alternativa);
+}
+
 .dashboard-stat-number {
     margin-top: 5px;
     color: var(--cor-texto);
@@ -469,6 +482,19 @@ a{
 .card-header .form-select option:checked {
     background-color: var(--cor-primaria-2) !important;
     color: var(--cor-caixas) !important;
+}
+
+.card-header .btn-group .btn-primary {
+    color: var(--cor-caixas) !important;
+}
+
+.card-header .btn-outline-primary {
+    --bs-btn-border-color: var(--cor-primaria-2);
+}
+
+.card-header .btn-outline-primary:hover {
+    border-color: var(--cor-primaria-2) !important;
+    --bs-btn-hover-bg: rgba(77, 54, 7, 0.3);
 }
 
 .table thead tr th {
@@ -753,6 +779,10 @@ a{
     --bs-btn-hover-color: var(--cor-primaria-2);
     --bs-btn-hover-bg: #4d3607;
     --bs-btn-hover-border-color: var(--cor-primaria-2);
+}
+
+[data-bs-theme="dark"] .btn-outline-success {
+    --bs-btn-hover-bg: #4d3607 !important;
 }
 
 [data-bs-theme="dark"] .table thead tr th {
