@@ -139,7 +139,7 @@
           </span>
           <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
             data-bs-target="#modal-add-galeria">
-            <i class="bi bi-upload me-1" aria-hidden="true"></i> Nova Imagem
+            <i class="bi bi-upload me-1" aria-hidden="true"></i> <span>Nova imagem</span>
           </button>
         </div>
         <!--end::Card Footer-->

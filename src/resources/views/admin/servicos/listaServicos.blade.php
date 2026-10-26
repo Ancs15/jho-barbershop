@@ -35,7 +35,7 @@
                   <div class="card-header">
                     <div class="row g-2 align-items-center">
                       <div class="col-12 col-md-4">
-                       
+                        <h3 class="card-title">Cortes e Serviços</h3>
                       </div>
                       <div class="col-12 col-md-8">
                         <div class="d-flex flex-wrap justify-content-md-end gap-2">
@@ -53,7 +53,7 @@
                           </select>
                           <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-add-user">
                             <i class="bi bi-person-plus-fill me-1" aria-hidden="true"> </i>
-                            Novo Serviço
+                            <span>Novo serviço</span>
                           </button>
                         </div>
                       </div>
